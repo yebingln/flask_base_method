@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Microblog: <a href="/index">Home</a></div>
+<hr>
+{% for message in get_flashed_messages() %}
+    {{ message }}
+{% endfor %}
+<hr>
+{% block content %}{% endblock %}
+</body>
+</html>
